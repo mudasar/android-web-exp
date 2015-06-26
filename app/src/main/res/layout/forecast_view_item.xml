@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/forecast_view_item"
+    >
+   <ImageView
+       android:layout_width="55dp"
+       android:layout_height="55dp"
+       android:layout_marginTop="10dp"
+       android:id="@+id/weather_image"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+
+       android:src="@drawable/weather_clear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="min 15 / max 25 Sunny"
+        android:id="@+id/forecast_text_view"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/forecast_detail_text_view"
+        android:layout_below="@+id/forecast_text_view"
+        android:layout_alignLeft="@+id/forecast_text_view"
+        android:textSize="14sp"
+        android:text="light rain"
+        />
+
+</RelativeLayout>  
